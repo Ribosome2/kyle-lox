@@ -1,4 +1,4 @@
-package com.kyle.kylelox;
+package org.intellij.sdk.language;
 
 import com.intellij.lang.Language;
 

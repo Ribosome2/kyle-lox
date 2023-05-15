@@ -24,9 +24,9 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <fileType name="Lox file" implementationClass="com.kyle.kylelox.LoxFileType"/>
+        <fileType name="Lox File" implementationClass="org.intellij.sdk.language.LoxFileType"/>
                   fieldName="INSTANCE" language="Simple" extensions="lox"/>
-        <fileTypeFactory implementation="com.kyle.kylelox.LoxFileTypeFactory"/>
+        <fileTypeFactory implementation="org.intellij.sdk.language.LoxFileTypeFactory"/>
     </extensions>
 
 </idea-plugin>

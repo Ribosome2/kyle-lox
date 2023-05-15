@@ -1,10 +1,7 @@
-package com.kyle.kylelox;
+package org.intellij.sdk.language;
 
 import com.intellij.icons.AllIcons;
 import com.intellij.openapi.fileTypes.LanguageFileType;
-import com.intellij.openapi.fileTypes.LanguageFileType;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 public class LoxFileType extends LanguageFileType {
@@ -31,7 +28,7 @@ public class LoxFileType extends LanguageFileType {
 
     @Override
     public Icon getIcon() {
-        return AllIcons.Plugins.PluginLogo;
+        return AllIcons.FileTypes.Custom;
     }
 
 

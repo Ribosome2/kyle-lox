@@ -1,0 +1,20 @@
+{
+  parserClass="org.intellij.sdk.language.parser.LoxParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Lox"
+  psiImplClassSuffix="Impl"
+  psiPackage="org.intellij.sdk.language.psi"
+  psiImplPackage="org.intellij.sdk.language.psi.impl"
+
+  elementTypeHolderClass="org.intellij.sdk.language.psi.LoxTypes"
+  elementTypeClass="org.intellij.sdk.language.psi.LoxElementType"
+  tokenTypeClass="org.intellij.sdk.language.psi.LoxTokenType"
+}
+
+loxFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
