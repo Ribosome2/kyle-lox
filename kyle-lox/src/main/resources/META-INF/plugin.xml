@@ -27,6 +27,8 @@
         <fileType name="Lox File" implementationClass="org.intellij.sdk.language.LoxFileType"/>
                   fieldName="INSTANCE" language="Simple" extensions="lox"/>
         <fileTypeFactory implementation="org.intellij.sdk.language.LoxFileTypeFactory"/>
+        <lang.parserDefinition language="Lox"
+                               implementationClass="org.intellij.sdk.language.LoxParserDefinition"/>
     </extensions>
 
 </idea-plugin>
