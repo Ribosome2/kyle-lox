@@ -29,6 +29,9 @@
         <fileTypeFactory implementation="org.intellij.sdk.language.LoxFileTypeFactory"/>
         <lang.parserDefinition language="Lox"
                                implementationClass="org.intellij.sdk.language.LoxParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Lox"
+                                       implementationClass="org.intellij.sdk.language.LoxSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="org.intellij.sdk.language.LoxColorSettingsPage"/>
     </extensions>
 
 </idea-plugin>
