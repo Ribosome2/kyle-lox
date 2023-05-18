@@ -2,7 +2,13 @@ plugins {
     id("java")
     id("org.jetbrains.intellij") version "1.12.0"
 }
-
+sourceSets {
+    main {
+        java {
+            srcDir("src/main/gen")
+        }
+    }
+}
 group = "com.example"
 version = "1.0-SNAPSHOT"
 
