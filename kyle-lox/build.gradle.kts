@@ -1,7 +1,10 @@
 plugins {
     id("java")
+    id("com.intellij.java")
     id("org.jetbrains.intellij") version "1.12.0"
 }
+
+
 sourceSets {
     main {
         java {
