@@ -69,3 +69,13 @@
 #### 有个链接，但是还是不对
 - LINK
 <pre>https://blog.jetbrains.com/platform/2019/06/java-functionality-extracted-as-a-plugin/?_ga=2.170034528.1501017795.1685066147-752930332.1642581265&amp;_gl=1*5hc813*_ga*NzUyOTMwMzMyLjE2NDI1ODEyNjU.*_ga_9J976DJZ68*MTY4NTA2NjE0Ny4xMzUuMS4xNjg1MDY2MzU0LjI4LjAuMA..</pre>
+
+#### build\.gradle\.kts 里得设置<br/>plugins\.set\(listOf\("com\.intellij\.java"\)\)
+
+####  \<depends\>com\.intellij\.java\</depends\> 得加到plugin\.xml里面
+> leftSide=`true`
+
+
+## 官方实例项目
+- LINK
+<pre>https://github.com/JetBrains/intellij-sdk-code-samples/tree/main/simple_language_plugin</pre>
