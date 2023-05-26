@@ -27,4 +27,14 @@ public class LoxPropertyImpl extends ASTWrapperPsiElement implements LoxProperty
     else super.accept(visitor);
   }
 
+  @Override
+  public String getKey() {
+    return LoxPsiImplUtil.getKey(this);
+  }
+
+  @Override
+  public String getValue() {
+    return LoxPsiImplUtil.getValue(this);
+  }
+
 }
