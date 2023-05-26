@@ -24,8 +24,8 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <fileType name="Lox File" implementationClass="org.intellij.sdk.language.LoxFileType"/>
-                  fieldName="INSTANCE" language="Simple" extensions="lox"/>
+        <fileType name="Lox File" implementationClass="org.intellij.sdk.language.LoxFileType"
+                  fieldName="INSTANCE" language="Lox" extensions="lox"/>
         <fileTypeFactory implementation="org.intellij.sdk.language.LoxFileTypeFactory"/>
         <lang.parserDefinition language="Lox"
                                implementationClass="org.intellij.sdk.language.LoxParserDefinition"/>
