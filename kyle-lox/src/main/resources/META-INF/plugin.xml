@@ -33,6 +33,8 @@
                                        implementationClass="org.intellij.sdk.language.LoxSyntaxHighlighterFactory"/>
         <colorSettingsPage implementation="org.intellij.sdk.language.LoxColorSettingsPage"/>
         <annotator language="JAVA" implementationClass="org.intellij.sdk.language.LoxAnnotator"/>
+        <codeInsight.lineMarkerProvider language="Lox"
+                                        implementationClass="org.intellij.sdk.language.LoxLineMarkerProvider"/>
     </extensions>
 
 </idea-plugin>
