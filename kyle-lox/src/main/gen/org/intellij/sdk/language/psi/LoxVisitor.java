@@ -8,6 +8,10 @@ import com.intellij.psi.PsiElement;
 public class LoxVisitor extends PsiElementVisitor {
 
   public void visitProperty(@NotNull LoxProperty o) {
+    visitNamedElement(o);
+  }
+
+  public void visitNamedElement(@NotNull LoxNamedElement o) {
     visitPsiElement(o);
   }
 

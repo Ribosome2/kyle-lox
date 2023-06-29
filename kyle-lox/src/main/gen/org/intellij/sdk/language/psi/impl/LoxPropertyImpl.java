@@ -8,10 +8,9 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.util.PsiTreeUtil;
 import static org.intellij.sdk.language.psi.LoxTypes.*;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import org.intellij.sdk.language.psi.*;
 
-public class LoxPropertyImpl extends ASTWrapperPsiElement implements LoxProperty {
+public class LoxPropertyImpl extends LoxNamedElementImpl implements LoxProperty {
 
   public LoxPropertyImpl(@NotNull ASTNode node) {
     super(node);
@@ -35,6 +34,21 @@ public class LoxPropertyImpl extends ASTWrapperPsiElement implements LoxProperty
   @Override
   public String getValue() {
     return LoxPsiImplUtil.getValue(this);
+  }
+
+  @Override
+  public String getName() {
+    return LoxPsiImplUtil.getName(this);
+  }
+
+  @Override
+  public PsiElement setName(String newName) {
+    return LoxPsiImplUtil.setName(this, newName);
+  }
+
+  @Override
+  public PsiElement getNameIdentifier() {
+    return LoxPsiImplUtil.getNameIdentifier(this);
   }
 
 }

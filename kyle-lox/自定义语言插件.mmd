@@ -17,12 +17,18 @@
 ### FileTypeFactor
 
 ## Gramar and Parser
+> collapsed=`true`
+
 
 ### TokenType类
+> collapsed=`true`
+
 
 #### 继承IElementType
 
 ### 创建一个XXX\.bnf指定语言的语法
+> collapsed=`true`
+
 
 #### bnf文件右键能选择<br/>Generate Parser Code<br/>能生成Parser代码
 
@@ -53,18 +59,22 @@
 
 
 ## PSI Helpers and Utilities
+> collapsed=`true`
+
 
 ### 定义PSI Impl类 并且在bnf里面指明<br/>psiImplUtilClass 是哪个类
 
 ### 右键bnf文件重新生成Parser代码
 
 ## Anotator
-> leftSide=`true`
+> collapsed=`true`,leftSide=`true`
 
 
 ### 根据特定的规则对代码进行高亮并且显示注解
 
 ### PsiLiteralExpression 编译报错
+> collapsed=`true`
+
 
 #### 有个链接，但是还是不对
 - LINK
@@ -85,7 +95,25 @@
 
 
 ## CompleteContributor
+> collapsed=`true`
+
 
 ### 实现一个 继承 CompletionContributor的类
 
 ### 在plugin\.xml注册 completion\.contributor
+
+## Reference Contributor
+> leftSide=`true`
+
+
+### NamedElement类
+
+### NamedElementImpl 封装NamedElement类
+> leftSide=`true`
+
+
+### 在PsiImpl实现一些函数供后面bnf定义的method函数调用
+
+### 声明一个ElementFactory 类
+
+### 更新\.bnf文件,指定上面的NameedElement和Impl<br/> 添加 getName setName getNameIdentifier,然后更新Parser

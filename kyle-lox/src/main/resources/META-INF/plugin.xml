@@ -37,6 +37,9 @@
                                         implementationClass="org.intellij.sdk.language.LoxLineMarkerProvider"/>
         <completion.contributor language="Lox"
                                 implementationClass="org.intellij.sdk.language.LoxCompletionContributor"/>
+        <psi.referenceContributor implementation="org.intellij.sdk.language.LoxReferenceContributor"/>
+        <lang.refactoringSupport language="Lox"
+                                 implementationClass="org.intellij.sdk.language.LoxRefactoringSupportProvider"/>
     </extensions>
 
 </idea-plugin>
